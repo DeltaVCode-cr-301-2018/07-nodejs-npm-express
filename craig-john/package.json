@@ -1,0 +1,24 @@
+{
+  "name": "craig-john",
+  "version": "1.0.0",
+  "description": "nodejsintro",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tektechnologies/07-nodejs-npm-express.git"
+  },
+  "author": "Craig John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tektechnologies/07-nodejs-npm-express/issues"
+  },
+  "homepage": "https://github.com/tektechnologies/07-nodejs-npm-express#readme",
+  "dependencies": {
+    "cowsay": "^1.3.1",
+    "express": "^4.16.3"
+  }
+}
