@@ -75,7 +75,8 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// This is called in article.js's fetchAll function which is triggered on loading the index page. This function will run depending on whether or not rawData is stored 
+// locally or retreived via a JSON file using AJAX. If neither is successful, the function will not run and an error will be thrown. 
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -88,7 +89,7 @@ articleView.initNewArticlePage = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is called in the initNewArticlePage method and is ultimately triggered by loading the index page.
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -113,7 +114,7 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This function is called in the initNewArticlePage method and is ultimately triggered by loading the index page.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -126,7 +127,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // This function is defined in article.js, is called with the submit method, and is ultimately triggered by loading the index page.
   article.insertRecord();
 }
 
