@@ -1,6 +1,6 @@
 'use strict';
 
-//TODO: Finish out the server code according to the instructions in the lab README
+//Done: Finish out the server code according to the instructions in the lab README
 
 const express = require('express');
 const app = express();
