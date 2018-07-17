@@ -87,17 +87,25 @@ _Your README.md must include:_
 ```md
 # Project Name
 
-**Author**: Your Name Goes Here
+**Author**: John And Craig
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
 
+Our problem domain is that we want guests to this website to creat and recieve articles. In order to do that, we needed to initialize the project. The way we did that was by using npm init which created package.json and package-lock.json and we had to add to the git ignore file with no modules. Once we did that, we used npm to install expressjs and then we saved that as a dependancy in our package.json.
+We needed to set up a server file to handle the http requests and responses for html using expressjs. We had to configure the app.use middleware to interface with the file system to serve static resources. The next thing that we made was an app.listen to listen for incoming requests. Once we had the incoming request, we used the node server to ensure that our app was running correctly. We had to the create a route and a call back to server up the new page and refactor any existing methods into arraow functions. The last thing we did was make a 404 route to handle requests tht weren't related to our page.
+
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
+In order to do that, we needed to initialize the project. The way we did that was by using npm init which created package.json and package-lock.json and we had to add to the git ignore file with no modules. Once we did that, we used npm to install expressjs and then we saved that as a dependancy in our package.json.
+We needed to set up a server file to handle the http requests and responses for html using expressjs. We had to configure the app.use middleware to interface with the file system to serve static resources. The next thing that we made was an app.listen to listen for incoming requests. Once we had the incoming request, we used the node server to ensure that our app was running correctly. We had to the create a route and a call back to server up the new page and refactor any existing methods into arraow functions. The last thing we did was make a 404 route to handle requests tht weren't related to our page.
+
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+we used node.js, expressjs and json
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
@@ -107,4 +115,4 @@ _Your README.md must include:_
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 -->
-```
+We give credit out to Keith, Google and Dean.... Sorry. I mean David.
