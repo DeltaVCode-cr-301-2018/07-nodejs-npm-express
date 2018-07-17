@@ -1,6 +1,6 @@
 'use strict';
 
-//TODO: Finish out the server code according to the instructions in the lab README
+/*TODO: Finish out the server code according to the instructions in the lab README */
 
 //Load Express
 const express = require('express');
