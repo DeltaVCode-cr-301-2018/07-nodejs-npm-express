@@ -6,6 +6,10 @@ const express = require('express');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
+app.get('/new', (req,res) => {
+  console.log('Hello');
+  res.sendFile('public/new.html', {root: '.'});
+})
 // REVIEW: POST route needs to parse the body passed in with the request.
 // POST middleware
 
@@ -14,6 +18,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('./public'));
 //files are stored in public directory to organize them for access when requesting pages. To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
+
+app.get('*', (req,res) => {
+  res.status(404).send('404 something went wrong');
+});
 
 app.listen(PORT, () => {
   console.log(cowsay.say({
