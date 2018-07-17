@@ -23,8 +23,8 @@ app.get('/new', (req,res)=>{
 });
 
 app.get('*', (req,res)=> {
-  res.status(404).send('Not found');
-  //res.sendfile('new.html', { root: './public'});
+  res.status(404);
+  res.sendfile('404-gif-8.gif', { root: '.'});
 });
 
 app.post('/articles', (request, response) => {
